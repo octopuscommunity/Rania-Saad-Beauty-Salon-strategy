@@ -416,7 +416,43 @@ html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
   h1, .header-headline { font-size: clamp(16px, 4vw, 24px); }
 }
 
-/* Fix overflow on small screens */
+/* Larger, more readable type on mobile — avoids the need to pinch-zoom */
+@media (max-width: 600px) {
+  body { font-size: 15px; }
+  .header-sub-text { font-size: 15px; line-height: 2; }
+  .h-stat-val { font-size: 22px; }
+  .h-stat-label { font-size: 11px; }
+  .sec-title { font-size: 18px; }
+  .sec-sub { font-size: 14.5px; }
+  .shared-item { font-size: 14px; line-height: 1.8; }
+  .shared-title { font-size: 14px; }
+  .di-n { font-size: 24px; }
+  .di-l { font-size: 13.5px; }
+  .di-s { font-size: 12.5px; }
+  .dist-label { font-size: 11px; }
+  .pillar-pct { font-size: 26px; }
+  .pillar-name { font-size: 14px; }
+  .pillar-desc { font-size: 13px; line-height: 1.7; }
+  .rule-title { font-size: 14px; }
+  .rule-desc { font-size: 13.5px; line-height: 1.75; }
+  .branch-name { font-size: 16px; }
+  .branch-sub { font-size: 11px; }
+  .branch-lbl { font-size: 12px; }
+  .branch-val { font-size: 13.5px; line-height: 1.75; }
+  .dc-title { font-size: 14.5px; }
+  .dc-body { font-size: 13.5px; line-height: 1.8; }
+  .mh-badge { font-size: 10.5px; }
+  .mh-title { font-size: 20px; }
+  .mh-desc { font-size: 13.5px; line-height: 1.8; }
+  .mhn-val { font-size: 22px; }
+  .mhn-lbl { font-size: 11px; }
+  .month-nav-btn { font-size: 13px; }
+  .finale-q { font-size: 19px; }
+  .finale-s { font-size: 14px; line-height: 1.9; }
+  .designs-sec-hdr, .ds-title { font-size: 12.5px; }
+  .footer-info, .footer-brand-txt { font-size: 11.5px; }
+}
+
 main { overflow-x: hidden; }
 img { max-width: 100%; height: auto; }
 table { max-width: 100%; overflow-x: auto; display: block; }
